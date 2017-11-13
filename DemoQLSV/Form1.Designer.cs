@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtDiachi = new System.Windows.Forms.TextBox();
@@ -54,15 +55,15 @@
             this.Diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Malop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Hinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
             this.pHinh = new System.Windows.Forms.PictureBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnLuu = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnHuy = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocsinh)).BeginInit();
@@ -310,99 +311,10 @@
             this.Hinh.HeaderText = "Hình";
             this.Hinh.Name = "Hinh";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(1036, 311);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 70);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Chọn hình";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Image = global::DemoQLSV.Properties.Resources.if_icons_exit2_1564506;
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(1130, 582);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(161, 54);
-            this.btnThoat.TabIndex = 6;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Image = global::DemoQLSV.Properties.Resources.if_comment_cancel_103761;
-            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(1130, 507);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(161, 54);
-            this.btnHuy.TabIndex = 6;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Image = global::DemoQLSV.Properties.Resources.if_ic_save_48px_352084;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(1130, 429);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(161, 54);
-            this.btnLuu.TabIndex = 6;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Image = global::DemoQLSV.Properties.Resources.if_write_126582;
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(937, 582);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(161, 54);
-            this.btnSua.TabIndex = 6;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Image = global::DemoQLSV.Properties.Resources.if_ic_delete_48px_352303;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(937, 507);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(161, 54);
-            this.btnXoa.TabIndex = 6;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Image = global::DemoQLSV.Properties.Resources.if_user_half_add_103774;
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(937, 429);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(161, 54);
-            this.btnThem.TabIndex = 6;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // pHinh
             // 
@@ -412,18 +324,102 @@
             this.pHinh.TabIndex = 4;
             this.pHinh.TabStop = false;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(1013, 302);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(192, 62);
+            this.simpleButton1.TabIndex = 7;
+            this.simpleButton1.Text = "Chọn hình";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // sbtnThem
+            // 
+            this.sbtnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.sbtnThem.Appearance.Options.UseFont = true;
+            this.sbtnThem.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.Image")));
+            this.sbtnThem.Location = new System.Drawing.Point(966, 431);
+            this.sbtnThem.Name = "sbtnThem";
+            this.sbtnThem.Size = new System.Drawing.Size(148, 55);
+            this.sbtnThem.TabIndex = 8;
+            this.sbtnThem.Text = "Thêm";
+            this.sbtnThem.Click += new System.EventHandler(this.sbtnThem_Click);
+            // 
+            // sbtnSua
+            // 
+            this.sbtnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.sbtnSua.Appearance.Options.UseFont = true;
+            this.sbtnSua.Image = ((System.Drawing.Image)(resources.GetObject("sbtnSua.Image")));
+            this.sbtnSua.Location = new System.Drawing.Point(966, 584);
+            this.sbtnSua.Name = "sbtnSua";
+            this.sbtnSua.Size = new System.Drawing.Size(148, 55);
+            this.sbtnSua.TabIndex = 8;
+            this.sbtnSua.Text = "Sửa";
+            this.sbtnSua.Click += new System.EventHandler(this.sbtnSua_Click);
+            // 
+            // sbtnXoa
+            // 
+            this.sbtnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.sbtnXoa.Appearance.Options.UseFont = true;
+            this.sbtnXoa.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.Image")));
+            this.sbtnXoa.Location = new System.Drawing.Point(966, 510);
+            this.sbtnXoa.Name = "sbtnXoa";
+            this.sbtnXoa.Size = new System.Drawing.Size(148, 55);
+            this.sbtnXoa.TabIndex = 8;
+            this.sbtnXoa.Text = "Xóa";
+            this.sbtnXoa.Click += new System.EventHandler(this.sbtnXoa_Click);
+            // 
+            // sbtnLuu
+            // 
+            this.sbtnLuu.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.sbtnLuu.Appearance.Options.UseFont = true;
+            this.sbtnLuu.Image = ((System.Drawing.Image)(resources.GetObject("sbtnLuu.Image")));
+            this.sbtnLuu.Location = new System.Drawing.Point(1132, 431);
+            this.sbtnLuu.Name = "sbtnLuu";
+            this.sbtnLuu.Size = new System.Drawing.Size(148, 55);
+            this.sbtnLuu.TabIndex = 8;
+            this.sbtnLuu.Text = "Lưu";
+            this.sbtnLuu.Click += new System.EventHandler(this.sbtnLuu_Click);
+            // 
+            // sbtnHuy
+            // 
+            this.sbtnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.sbtnHuy.Appearance.Options.UseFont = true;
+            this.sbtnHuy.Image = ((System.Drawing.Image)(resources.GetObject("sbtnHuy.Image")));
+            this.sbtnHuy.Location = new System.Drawing.Point(1132, 510);
+            this.sbtnHuy.Name = "sbtnHuy";
+            this.sbtnHuy.Size = new System.Drawing.Size(148, 55);
+            this.sbtnHuy.TabIndex = 8;
+            this.sbtnHuy.Text = "Hủy";
+            this.sbtnHuy.Click += new System.EventHandler(this.sbtnHuy_Click);
+            // 
+            // sbtnThoat
+            // 
+            this.sbtnThoat.Appearance.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.sbtnThoat.Appearance.Options.UseFont = true;
+            this.sbtnThoat.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThoat.Image")));
+            this.sbtnThoat.Location = new System.Drawing.Point(1132, 584);
+            this.sbtnThoat.Name = "sbtnThoat";
+            this.sbtnThoat.Size = new System.Drawing.Size(148, 55);
+            this.sbtnThoat.TabIndex = 8;
+            this.sbtnThoat.Text = "Thoát";
+            this.sbtnThoat.Click += new System.EventHandler(this.sbtnThoat_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 694);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.sbtnThoat);
+            this.Controls.Add(this.sbtnHuy);
+            this.Controls.Add(this.sbtnXoa);
+            this.Controls.Add(this.sbtnLuu);
+            this.Controls.Add(this.sbtnSua);
+            this.Controls.Add(this.sbtnThem);
+            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.pHinh);
             this.Controls.Add(this.dgvHocsinh);
             this.Controls.Add(this.groupBox2);
@@ -464,14 +460,7 @@
         private System.Windows.Forms.TextBox txtTim;
         private System.Windows.Forms.DataGridView dgvHocsinh;
         private System.Windows.Forms.PictureBox pHinh;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DataGridViewTextBoxColumn Masv;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hoten;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngaysinh;
@@ -480,6 +469,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Malop;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hinh;
         private System.Windows.Forms.Button btnTim;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton sbtnThem;
+        private DevExpress.XtraEditors.SimpleButton sbtnSua;
+        private DevExpress.XtraEditors.SimpleButton sbtnXoa;
+        private DevExpress.XtraEditors.SimpleButton sbtnLuu;
+        private DevExpress.XtraEditors.SimpleButton sbtnHuy;
+        private DevExpress.XtraEditors.SimpleButton sbtnThoat;
     }
 }
 

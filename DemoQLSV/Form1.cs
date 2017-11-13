@@ -75,12 +75,12 @@ namespace DemoQLSV
 
         private void enabledNutLenh(bool pCapNhat)
         {
-            btnThem.Enabled = !pCapNhat;
-            btnSua.Enabled = !pCapNhat;
-            btnXoa.Enabled = !pCapNhat;
-            btnLuu.Enabled = pCapNhat;
-            btnHuy.Enabled = pCapNhat;
-            btnThoat.Enabled = !pCapNhat;
+            sbtnThem.Enabled = !pCapNhat;
+            sbtnSua.Enabled = !pCapNhat;
+            sbtnXoa.Enabled = !pCapNhat;
+            sbtnLuu.Enabled = pCapNhat;
+            sbtnHuy.Enabled = pCapNhat;
+            sbtnThoat.Enabled = !pCapNhat;
         }
 
         private void rdbNam_CheckedChanged(object sender, EventArgs e)
@@ -182,6 +182,71 @@ namespace DemoQLSV
             {
                 MessageBox.Show("Không tìm thấy");
             }
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "JPG Files|*.jpg|PNG Files|*.png|ALL Files|*.*";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = openFileDialog1.SafeFileName;
+                string pathFile = path + "/" + fileName;
+                if (!File.Exists(pathFile))
+                    File.Copy(openFileDialog1.FileName, pathFile);
+                pHinh.ImageLocation = pathFile;
+            }
+        }
+
+        private void sbtnThem_Click(object sender, EventArgs e)
+        {
+            DSSV.AddNew();
+            enabledNutLenh(true);
+        }
+
+        private void sbtnXoa_Click(object sender, EventArgs e)
+        {
+            DSSV.RemoveAt(DSSV.Position);
+            if (!Bang_SINHVIEN.Ghi())
+                MessageBox.Show("Xóa thất bại");
+        }
+
+        private void sbtnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DSSV.EndCurrentEdit();
+                Bang_SINHVIEN.Ghi();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void sbtnLuu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DSSV.EndCurrentEdit();
+                Bang_SINHVIEN.Ghi();
+                enabledNutLenh(false);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void sbtnHuy_Click(object sender, EventArgs e)
+        {
+            DSSV.CancelCurrentEdit();
+            Bang_SINHVIEN.RejectChanges();
+            enabledNutLenh(false);
+        }
+
+        private void sbtnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
 

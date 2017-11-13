@@ -63,6 +63,26 @@ namespace DemoQLSV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_068_Cancel_183197 {
+            get {
+                object obj = ResourceManager.GetObject("if_068_Cancel_183197", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_circle_add_226591 {
+            get {
+                object obj = ResourceManager.GetObject("if_circle-add_226591", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_comment_cancel_103761 {
             get {
                 object obj = ResourceManager.GetObject("if_comment_cancel_103761", resourceCulture);
@@ -73,9 +93,39 @@ namespace DemoQLSV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_edit_103539 {
+            get {
+                object obj = ResourceManager.GetObject("if_edit_103539", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_floppy_disk_save_103863 {
+            get {
+                object obj = ResourceManager.GetObject("if_floppy_disk_save_103863", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_ic_delete_48px_352303 {
             get {
                 object obj = ResourceManager.GetObject("if_ic_delete_48px_352303", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_ic_exit_to_app_48px_352328 {
+            get {
+                object obj = ResourceManager.GetObject("if_ic_exit_to_app_48px_352328", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +146,16 @@ namespace DemoQLSV.Properties {
         internal static System.Drawing.Bitmap if_icons_exit2_1564506 {
             get {
                 object obj = ResourceManager.GetObject("if_icons_exit2_1564506", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Streamline_70_185090 {
+            get {
+                object obj = ResourceManager.GetObject("if_Streamline-70_185090", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

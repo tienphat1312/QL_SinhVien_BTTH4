@@ -35,8 +35,15 @@
     <Reference Include="DevComponents.DotNetBar2">
       <HintPath>E:\Study\LT_CSDL\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -112,6 +119,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_ic_delete_48px_352303.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_circle-add_226591.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Streamline-70_185090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_edit_103539.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_floppy_disk_save_103863.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_068_Cancel_183197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ic_exit_to_app_48px_352328.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
